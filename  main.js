@@ -15,16 +15,18 @@ function dataChecker(id) {
         }
     } else if (id == MyAge) {
         var me = document.getElementById("MyAge").value
-        if (me > 32 && me != 32) {
+        if (me > 32) {
             alert("You are older then Alex and Tom!")
-        } else if (me < 21 && me != 21) {
-            alert("You are younger then Alex and Tom!")
-        } else if (me > 21 && me < 32 && me != 21) {
+        } else if (me > 21) {
             alert("You are older then Tom and younger then Alex!")
         } else if (me == 21) {
             alert("Same age as Tom and younger then Alex!")
         } else if (me == 32) {
             alert("Same age as Alex and older then Tom!");
+        } else if (me < 21 && me != 0) {
+            alert("You are younger then Alex and Tom!")
+        } else {
+            alert("Wrong")
         }
     }
 }
@@ -70,83 +72,58 @@ function indexArray(arr, ind) {
     var Array = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
     ind = document.getElementById("Index").value
     arr = Array;
-    alert(arr[ind]);
-}
-
-
-
-
-
-
-
-
-function repeatNum() {
-    var arrayNum = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
-    var results = [];
-    arrayNum.sort();
-    for (var i = 0; i < res.length - 1; i++) {
-        if (res[i + 1] == res[i]) {
-            results.push(res[i]);
-        }
+    if (ind >= 0 && ind <= 21) {
+        alert(arr[ind]);
+    } else {
+        alert("Incorrect");
     }
 }
 
+function repeatNum(id) {
+    var arrayNum = [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100];
+    var results = [];
+    arrayNum.sort();
+    for (var i = 0; i < arrayNum.length - 1; i++) {
+        if (arrayNum[i + 1] == arrayNum[i]) {
+            results.push(arrayNum[i]);
+        }
+    }
+    alert(results);
+}
 
+function reverse_a_number(n) {
+    n = n + "";
+    return alert(n.split("").reverse().join(""));
+}
 
+function aplhabetSort(name) {
+    if (name == "WEBMASTER") {
+        x = name.split('').sort().join('') + ". It's mixed now.";
+    }
+    return document.getElementById("inner").innerHTML = x;
+}
 
-//
-//
-//var color = ["Red", "Green", "White", "Black"];
-//
-//function stringcolor(array) {
-//    return array.join("  ");
-//}
-//console.log(stringcolor(color));
-//
-//
-//var revNumber = 32443;
-//
-//function reverseAnumber(n) {
-//    n = n + "";
-//    return n.split("").reverse().join("");
-//}
-//console.log(reverseAnumber(revNumber));
-//
-//
-//var name = "webmaster";
-//
-//function aplhabetSort(stringSort) {
-//    return stringSort.split('').sort().join('');
-//}
-//console.log(aplhabetSort(name));
-//
-//
-//
-//
-//
-//var uppername = "prince of persia";
-//
-//function uppercase(stringUpper) {
-//    var array1 = stringUpper.split(' ');
-//    var newarray1 = [];
-//    for (var i = 0; i < array1.length; i++) {
-//        newarray1.push(array1[i].charAt(0).toUpperCase() + array1[i].slice(1));
-//    }
-//    return newarray1.join(' ');
-//}
-//console.log(uppercase(uppername));
-//
-//
-//
-//function longestWord(str) {
-//    var newLines = str.split(" ");
-//    var longestWord = newLines[0];
-//    for (i = 1; i < newLines.length; i++) {
-//        if (newLines[i].length > longestWord.length) {
-//            longestWord = newLines[i];
-//        }
-//    }
-//    console.log(longestWord);
-//}
-//
-//longestWord("Web Development Tutorial ");
+function uppercase(stringUpper) {
+    if (stringUpper == "WEB DEVELOPER") {
+        var upperArray = [];
+        stringUpper.split(' ');
+        for (var i = 0; i < stringUpper.length; i++) {
+            upperArray.push(stringUpper[i].charAt(0).toUpperCase() + stringUpper[i].slice(1));
+        }
+        return document.getElementById("prince").innerHTML = upperArray;
+    }
+}
+
+function findLongestWord(str) {
+    if (str == "WEB DEVELOPMENT GUIDES") {
+        const stringArray = str.split(" ");
+        const longestWord = stringArray.reduce((a, b) => {
+            if (b.length > a.length) {
+                return b + ". Which is the longest word";
+            } else {
+                return a;
+            }
+        });
+        return document.getElementById("longest").innerHTML = longestWord;
+    }
+}

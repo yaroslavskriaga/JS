@@ -20,7 +20,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <td></td>
+                            <td>Name</td>
                             <td>Age</td>
                         </tr>
                     </thead>
@@ -64,11 +64,40 @@
                     <button id="min" type="button" onclick="maxMin(min)">Show Min Number!</button>
                 </div>
                 <div class="box">
-                    <p>In javascript counting starts from 0, so number 3 is = to zero position -> [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
+                    <p>In JS counting starts from 0, so number 3 is on 0(zero) position -> [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
                     <form>
                         <input id="Index" placeholder="Number by index...">
-                        <button type="button" onclick="indexArray(Index)">Submit My Answer</button>
+                        <button type="button" onclick="indexArray()">Submit My Answer</button>
                     </form>
+                </div>
+                <div class="box">
+                    <p>[3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
+                    <button id="repNum" type="button" onclick="repeatNum(repNum)">Show Repeated Numbers!</button>
+                </div>
+                <div class="box">
+                    <p>32243</p>
+                    <button id="revert" type="button" onclick="reverse_a_number(32243)">Show Reverted!</button>
+                </div>
+            </div>
+            <div class="box">
+                <h1>Strings</h1>
+                <div class="box">
+                    <p>I am WEBMASTER</p>
+                    <button type="button" onclick="aplhabetSort('WEBMASTER')">Show Something!</button>
+                    <p>I am <span id="inner"></span></p>
+                    <a href="index.html">refresh</a>
+                </div>
+                <div class="box">
+                    <p>I am WEB DEVELOPER</p>
+                    <button type="button" onclick="uppercase('WEB DEVELOPER')">Show Something!</button>
+                    <p>I am <span id="prince"></span></p>
+                    <a href="index.html">refresh</a>
+                </div>
+                <div class="box">
+                    <p>I like to read WEB DEVELOPMENT GUIDES</p>
+                    <button type="button" onclick="findLongestWord('WEB DEVELOPMENT GUIDES')">Show Something!</button>
+                    <p>I like to read <span id="longest"></span></p>
+                    <a href="index.html">refresh</a>
                 </div>
             </div>
         </div>
