@@ -10,98 +10,100 @@
 </head>
 
 <body>
-    <div class="d-flex justify-content-center">
-        <div class="jumbotron">
-            <h2>Hello! This is my simple mathematical tricks, builded with JS.Enjoy!</h2>
-        </div>
-        <div class="container">
-            <div class="box">
-                <h1>Data Validator</h1>
-                <table class="table">
-                    <thead>
+    <main>
+        <div class="d-flex justify-content-center">
+            <div class="jumbotron">
+                <h2>Hello! This is my simple mathematical tricks, builded with JS.Enjoy!</h2>
+            </div>
+            <div class="container">
+                <div class="box">
+                    <h1>Data Validator</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Age</td>
+                            </tr>
+                        </thead>
                         <tr>
-                            <td>Name</td>
-                            <td>Age</td>
+                            <td>Tom</td>
+                            <td>21</td>
                         </tr>
-                    </thead>
-                    <tr>
-                        <td>Tom</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>Alex</td>
-                        <td>32</td>
-                    </tr>
-                </table>
-                <form>
-                    <input id="TomInput" placeholder="How Old Is Tom?">
-                    <button type="button" onclick="dataChecker(TomInput)">Submit My Answer</button>
-                </form>
-                <form>
-                    <input id="AlexInput" placeholder="How Old Is Alex?">
-                    <button type="button" onclick="dataChecker(AlexInput)">Submit My Answer</button>
-                </form>
-                <form>
-                    <input id="MyAge" placeholder="My age is...">
-                    <button type="button" onclick="dataChecker(MyAge)">Submit My Answer</button>
-                </form>
-            </div>
-            <div class="box">
-                <h1>Sorting by Alphabet</h1>
-                <p>My Classmates: "Joan", "Wendy", "Lluis", "Li", "Ruben", "Slavik", "Santi", "Sinisa", "Vasil", "Emi", "Deni" .</p>
-                <button id="sortMates" type="button" onclick="sortArray()">Sort!</button>
-            </div>
-            <div class="box">
-                <h1>Numbers</h1>
-                <div class="box">
-                    <p>[23, 27, 32, 30, 22, 20, 25, 32, 33, 28, 27]</p>
-                    <button id="showOdd" type="button" onclick="number(showOdd)">Show Odd Numbers!</button>
-                    <button id="showEven" type="button" onclick="number(showEven)">Show Even Numbers!</button>
-                </div>
-                <div class="box">
-                    <p>[243, 12, 45, 2, 13, 6, 4, 56, 51, 57, 82, 14]</p>
-                    <button id="max" type="button" onclick="maxMin(max)">Show Max Number!</button>
-                    <button id="min" type="button" onclick="maxMin(min)">Show Min Number!</button>
-                </div>
-                <div class="box">
-                    <p>In JS counting starts from 0, so number 3 is on 0(zero) position -> [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
+                        <tr>
+                            <td>Alex</td>
+                            <td>32</td>
+                        </tr>
+                    </table>
                     <form>
-                        <input id="Index" placeholder="Number by index...">
-                        <button type="button" onclick="indexArray()">Submit My Answer</button>
+                        <input id="TomInput" placeholder="How Old Is Tom?">
+                        <button type="button" onclick="dataChecker(TomInput)">Submit My Answer</button>
+                    </form>
+                    <form>
+                        <input id="AlexInput" placeholder="How Old Is Alex?">
+                        <button type="button" onclick="dataChecker(AlexInput)">Submit My Answer</button>
+                    </form>
+                    <form>
+                        <input id="MyAge" placeholder="My age is...">
+                        <button type="button" onclick="dataChecker(MyAge)">Submit My Answer</button>
                     </form>
                 </div>
                 <div class="box">
-                    <p>[3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
-                    <button id="repNum" type="button" onclick="repeatNum(repNum)">Show Repeated Numbers!</button>
+                    <h1>Sorting by Alphabet</h1>
+                    <p>My Classmates: "Joan", "Wendy", "Lluis", "Li", "Ruben", "Slavik", "Santi", "Sinisa", "Vasil", "Emi", "Deni" .</p>
+                    <button id="sortMates" type="button" onclick="sortArray()">Sort!</button>
                 </div>
                 <div class="box">
-                    <p>32243</p>
-                    <button id="revert" type="button" onclick="reverse_a_number(32243)">Show Reverted!</button>
+                    <h1>Numbers</h1>
+                    <div class="box">
+                        <p>[23, 27, 32, 30, 22, 20, 25, 32, 33, 28, 27]</p>
+                        <button id="showOdd" type="button" onclick="number(showOdd)">Show Odd Numbers!</button>
+                        <button id="showEven" type="button" onclick="number(showEven)">Show Even Numbers!</button>
+                    </div>
+                    <div class="box">
+                        <p>[243, 12, 45, 2, 13, 6, 4, 56, 51, 57, 82, 14]</p>
+                        <button id="max" type="button" onclick="maxMin(max)">Show Max Number!</button>
+                        <button id="min" type="button" onclick="maxMin(min)">Show Min Number!</button>
+                    </div>
+                    <div class="box">
+                        <p>In JS counting starts from 0, so number 3 is on 0(zero) position -> [3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
+                        <form>
+                            <input id="Index" placeholder="Number by index...">
+                            <button type="button" onclick="indexArray()">Submit My Answer</button>
+                        </form>
+                    </div>
+                    <div class="box">
+                        <p>[3, 6, 67, 6, 23, 11, 100, 8, 93, 0, 17, 24, 7, 1, 33, 45, 28, 33, 23, 12, 99, 100]</p>
+                        <button id="repNum" type="button" onclick="repeatNum(repNum)">Show Repeated Numbers!</button>
+                    </div>
+                    <div class="box">
+                        <p>32243</p>
+                        <button id="revert" type="button" onclick="reverse_a_number(32243)">Show Reverted!</button>
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <h1>Strings</h1>
                 <div class="box">
-                    <p>I am WEBMASTER</p>
-                    <button type="button" onclick="aplhabetSort('WEBMASTER')">Show Something!</button>
-                    <p>I am <span id="inner"></span></p>
-                    <a href="index.html">refresh</a>
-                </div>
-                <div class="box">
-                    <p>I am WEB DEVELOPER</p>
-                    <button type="button" onclick="uppercase('WEB DEVELOPER')">Show Something!</button>
-                    <p>I am <span id="prince"></span></p>
-                    <a href="index.html">refresh</a>
-                </div>
-                <div class="box">
-                    <p>I like to read WEB DEVELOPMENT GUIDES</p>
-                    <button type="button" onclick="findLongestWord('WEB DEVELOPMENT GUIDES')">Show Something!</button>
-                    <p>I like to read <span id="longest"></span></p>
-                    <a href="index.html">refresh</a>
+                    <h1>Strings</h1>
+                    <div class="box">
+                        <p>I am WEBMASTER</p>
+                        <button type="button" onclick="aplhabetSort('WEBMASTER')">Show Something!</button>
+                        <p>I am <span id="inner"></span></p>
+                        <a href="index.html">refresh</a>
+                    </div>
+                    <div class="box">
+                        <p>I am WEB DEVELOPER</p>
+                        <button type="button" onclick="uppercase('WEB DEVELOPER')">Show Something!</button>
+                        <p>I am <span id="prince"></span></p>
+                        <a href="index.html">refresh</a>
+                    </div>
+                    <div class="box">
+                        <p>I like to read WEB DEVELOPMENT GUIDES</p>
+                        <button type="button" onclick="findLongestWord('WEB DEVELOPMENT GUIDES')">Show Something!</button>
+                        <p>I like to read <span id="longest"></span></p>
+                        <a href="index.html">refresh</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <script src="%20main.js"></script>
 </body>
 

@@ -1,19 +1,23 @@
 @charset "utf-8";
 
 .jumbotron {
-	margin-bottom: -2rem;
+    margin-bottom: -2rem;
 }
 
 .container {
     border: 2px solid black;
-    margin:1%;
-    padding:5%;
+    padding: 1%;
     text-align: center;
 }
 
-.box{
-	border: 1px solid black;
-    margin:1%;
-    padding:5%;
+.box {
+    border: 1px solid black;
+    padding: 1%;
     text-align: center;
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    .jumbotron {
+    }
+
 }
