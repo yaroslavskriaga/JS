@@ -98,7 +98,7 @@ function reverse_a_number(n) {
 
 function aplhabetSort(name) {
     if (name == "WEBMASTER") {
-        x = name.split('').sort().join('') + ". It's mixed now.";
+        x = name.split('').sort().join('') + ". It's mixed now";
     }
     return document.getElementById("inner").innerHTML = x;
 }
